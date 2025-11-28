@@ -1,0 +1,68 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+
+.desktop {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+
+.rectangle,
+.rectangle-2,
+.rectangle-3,
+.rectangle-4,
+.rectangle-5,
+.rectangle-6 {
+  background: white;
+  border-radius: 12px;
+  height: 160px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+
+.img,
+.rectangle-7 {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.text-wrapper,
+.text-wrapper-2,
+.text-wrapper-3,
+.text-wrapper-4,
+.text-wrapper-5,
+.text-wrapper-6 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rectangle:hover,
+.rectangle-2:hover,
+.rectangle-3:hover,
+.rectangle-4:hover,
+.rectangle-5:hover,
+.rectangle-6:hover,
+.img:hover,
+.rectangle-7:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
